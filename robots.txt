@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://o0ma8.github.io/alghaz-atfal/sitemap.xml
