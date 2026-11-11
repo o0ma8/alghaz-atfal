@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fff9f1">
-  <meta name="description" content="ألعاب ألغاز عربية للأطفال، ألعاب تعليمية، أنشطة ذهنية، وتحديات ممتعة تنمي التفكير والانتباه والذاكرة بأسلوب آمن ومناسب للأم والطفل.">
-  <meta name="keywords" content="ألعاب ألغاز أطفال, ألعاب تعليمية, ألعاب ذكاء للأطفال, العاب الغاز, ألعاب عربية للأطفال, ألعاب للطفل, أنشطة عقلية للأطفال, ألعاب ذهنية للأطفال, ألعاب للأمهات">
+  <meta name="description" content="ألعاب ألغاز عربية للأطفال، ألعاب تعليمية، وأنشطة ذهنية متدرجة من fácil إلى صعب. تتبع التحديات اليومية والأسبوعية مع شارة الإنجاز والمرح.">
+  <meta name="keywords" content="ألعاب ألغاز أطفال, ألعاب تعليمية, ألعاب ذكاء للأطفال, العاب الغاز, ألعاب عربية للأطفال, ألعاب متدرجة, تحدي اليوم, تحدي الأسبوع, ألعاب ذهنية">
   <meta name="author" content="لُغزي الصغير">
   <meta property="og:title" content="لُغزي الصغير | ألعاب ألغاز عربية للأطفال">
-  <meta property="og:description" content="ألعاب ألغاز تعليمية ممتعة للطفل، مناسبة للأمهات لتطوير مهارات التفكير والانتباه والذاكرة من خلال اللعب.">
+  <meta property="og:description" content="موقع عربي يقدم ألعاب ألغاز متدرجة للأطفال، مع تحديات يومية وأسبوعية، وتمارين ذهنية ممتعة تنمي التفكير والانتباه والذاكرة.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://o0ma8.github.io/alghaz-atfal/">
   <meta property="og:image" content="https://o0ma8.github.io/alghaz-atfal/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <title>ألعاب ألغاز عربية للأطفال | لُغزي الصغير</title>
+  <title>لُغزي الصغير | ألعاب ألغاز عربية للأطفال</title>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "لُغزي الصغير",
     "url": "https://o0ma8.github.io/alghaz-atfal/",
-    "description": "ألعاب ألغاز عربية للأطفال، أنشطة ذهنية، وألعاب تعليمية تنمي التفكير والانتباه والذاكرة في بيئة ممتعة وآمنة.",
+    "description": "ألعاب ألغاز عربية للأطفال، أنشطة ذهنية، وتحديات يومية وأسبوعية تنمي التفكير والانتباه والذاكرة في بيئة ممتعة وآمنة.",
     "inLanguage": "ar"
   }
   </script>
@@ -29,18 +29,19 @@
       --paper:#fffaf4; --ink:#1f2d3d; --muted:#687385; --pink:#ff7aa8; --pink-soft:#fff0f6;
       --mint:#7fd5b4; --mint-soft:#ebfaf4; --gold:#f5d270; --purple:#bba8ff; --purple-soft:#f3eeff;
       --sky:#eaf4ff; --line:#f0e7df; --white:#fff; --shadow:0 20px 40px rgba(34,24,31,.09);
+      --red:#e6677a; --tangerine:#ffb562; --blue:#79aefc;
     }
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.8} a{text-decoration:none;color:inherit} button,input,select{font:inherit} img{max-width:100%}
     .wrap{width:min(1180px,calc(100% - 28px));margin-inline:auto}
-    .topbar{position:sticky;top:0;z-index:20;background:rgba(255,250,244,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .topbar{position:sticky;top:0;z-index:30;background:rgba(255,250,244,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
     .nav{display:flex;justify-content:space-between;align-items:center;min-height:74px;gap:14px}
     .brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.18rem}
     .brand-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#ffe5f0,#fff7d7);font-size:1.45rem}
     .nav-links{display:flex;gap:22px;color:var(--muted);font-size:.94rem;font-weight:700}
     .nav-links a:hover{color:var(--pink)}
-    .nav-cta,.primary,.secondary,.play,.next-btn{cursor:pointer;transition:.2s ease}
+    .nav-cta,.primary,.secondary,.play,.next-btn,.cta-small{cursor:pointer;transition:.2s ease}
     .nav-cta,.primary{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:14px;border:none;background:var(--ink);color:var(--white);font-weight:800;box-shadow:0 12px 30px rgba(31,45,61,.18)}
-    .secondary{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border:1px solid var(--line);background:var(--white);color:var(--ink);border-radius:14px;font-weight:800}
+    .secondary,.cta-small{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border:1px solid var(--line);background:var(--white);color:var(--ink);border-radius:14px;font-weight:800}
     .hero{padding:52px 0 36px}
     .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}
     .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.8);border:1px solid var(--line);font-weight:800;font-size:.87rem;color:var(--pink)}
@@ -51,7 +52,7 @@
     .stats{display:flex;flex-wrap:wrap;gap:18px;color:var(--muted);font-weight:700;font-size:.9rem}
     .stats strong{display:block;color:var(--ink);font-size:1.5rem;margin-bottom:2px}
     .hero-art{position:relative;display:grid;place-items:center;min-height:360px}
-    .blob{width:min(345px,80vw);height:min(330px,70vw);border-radius:42% 58% 55% 45% / 40% 42% 58% 60%;background:linear-gradient(135deg,#ffe4b5,#fff2d1);display:grid;place-items:center;font-size:7.5rem;box-shadow:inset 0 0 0 15px rgba(255,255,255,.75)}
+    .blob{width:min(350px,80vw);height:min(340px,70vw);border-radius:42% 58% 55% 45% / 40% 42% 58% 60%;background:linear-gradient(135deg,#ffe4b5,#fff2d1);display:grid;place-items:center;font-size:7.5rem;box-shadow:inset 0 0 0 15px rgba(255,255,255,.75)}
     .float{position:absolute;padding:10px 14px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.96);box-shadow:var(--shadow);font-weight:800}
     .float.one{top:18px;right:18px}.float.two{bottom:26px;left:18px}.float.three{bottom:78px;right:28px;font-size:1.4rem}
     .section{padding:38px 0 60px}
@@ -69,7 +70,7 @@
     .game-card{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:24px;padding:18px 18px 20px;box-shadow:0 10px 24px rgba(31,37,52,.04)}
     .game-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
     .game-icon{min-height:112px;border-radius:18px;display:grid;place-items:center;font-size:3rem;margin-bottom:14px}
-    .bg-pink{background:var(--pink-soft)}.bg-mint{background:var(--mint-soft)}.bg-yellow{background:#fff4d7}.bg-purple{background:var(--purple-soft)}.bg-blue{background:#edf6ff}.bg-peach{background:#fff0ea}
+    .bg-pink{background:var(--pink-soft)}.bg-mint{background:var(--mint-soft)}.bg-yellow{background:#fff4d7}.bg-purple{background:var(--purple-soft)}.bg-blue{background:#edf6ff}.bg-peach{background:#fff0ea}.bg-sky{background:#ebf5ff}.bg-orange{background:#fff2e0}
     .game-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--muted);font-size:.78rem;font-weight:800}
     .pill{background:#fff0f6;color:#d76a90;padding:5px 10px;border-radius:999px}
     .game-card h3{margin:12px 0 8px;font-size:1.2rem}.game-card p{margin:0 0 16px;color:var(--muted);font-size:.92rem;min-height:52px}
@@ -77,6 +78,10 @@
     .play:hover{background:#ffe2eb}
     .empty{display:none;padding:18px 12px;margin-top:8px;border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.75);color:var(--muted);font-weight:700}
     .empty.show{display:block}
+    .challenge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .challenge-card{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:22px;padding:22px 18px;box-shadow:0 10px 24px rgba(20,26,34,.04)}
+    .challenge-card h3{margin:0 0 8px;font-size:1.15rem}.challenge-card p{margin:0 0 14px;color:var(--muted);font-size:.92rem}
+    .badge{display:inline-flex;align-items:center;justify-content:center;padding:6px 10px;background:#fff4d8;color:#b78200;border-radius:999px;font-size:.76rem;font-weight:900}
     .mom-box{display:grid;grid-template-columns:1fr 1fr;background:linear-gradient(135deg,#252d42,#303d5f);border-radius:28px;padding:28px;gap:28px;color:var(--white);box-shadow:0 18px 48px rgba(28,31,49,.18)}
     .mom-box h2{margin:10px 0 12px;font-size:clamp(1.8rem,2.9vw,2.7rem);line-height:1.2}.mom-box p{margin:0;color:rgba(255,255,255,.82)}
     .tips{display:grid;gap:12px}.tip{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:12px 14px}
@@ -91,23 +96,30 @@
     .footer-inner{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.9rem}
     .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(14,20,28,.72);z-index:50}
     .modal.open{display:flex}
-    .modal-box{position:relative;width:min(520px,100%);background:var(--white);border:1px solid var(--line);border-radius:24px;padding:22px 20px 18px;box-shadow:0 28px 80px rgba(0,0,0,.22)}
+    .modal-box{position:relative;width:min(560px,100%);background:var(--white);border:1px solid var(--line);border-radius:24px;padding:22px 20px 18px;box-shadow:0 28px 80px rgba(0,0,0,.22)}
     .close-btn{position:absolute;left:12px;top:12px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#fffaf8;cursor:pointer;font-size:1.2rem}
     .modal-top{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.8rem;margin-top:8px;margin-bottom:12px}
     .modal-box h3{margin:0 34px 8px 0;font-size:1.7rem}
+    .stage-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:6px 0 10px}
+    .progress{height:10px;background:#f2ede8;border-radius:999px;overflow:hidden;margin-bottom:10px}
+    .progress-bar{height:100%;width:0;background:linear-gradient(90deg,#ff93b6,#ffd175);border-radius:inherit}
     .question{margin:0 0 14px;color:var(--muted);font-weight:700}
     .answers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-    .answer{min-height:54px;border:1px solid var(--line);background:#fffaf7;border-radius:14px;padding:12px 10px;font-weight:800;color:var(--ink)}
+    .answer{min-height:54px;border:1px solid var(--line);background:#fffaf7;border-radius:14px;padding:12px 10px;font-weight:800;color:var(--ink);text-align:right}
     .answer:hover{border-color:var(--pink)}
     .answer.correct{background:var(--mint-soft);border-color:#9cd8ba}.answer.wrong{background:#fff0f5;border-color:#ffdce6}
-    .feedback{min-height:26px;margin-top:12px;font-weight:800}
-    .feedback.good{color:#1d8d68}.feedback.bad{color:#d25a7a}
+    .feedback{min-height:30px;margin-top:12px;font-weight:800}
+    .feedback.good{color:#1d8d68}.feedback.bad{color:#d25a7a}.feedback.info{color:#6d7a8e}
     .next-btn{display:none;min-height:46px;width:100%;margin-top:10px;border:none;border-radius:12px;background:var(--ink);color:var(--white);font-weight:900}
     .next-btn.show{display:block}
     .score{margin-top:12px;color:var(--muted);font-size:.88rem;font-weight:700}
-    @media(max-width:980px){.features{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-grid,.mom-box,.faq,.steps{grid-template-columns:1fr}.games-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:720px){.nav-links{display:none}.games-grid,.features{grid-template-columns:1fr}.section-head{display:block}.hero{padding-top:32px}.answers{grid-template-columns:1fr 1fr}}
-    @media(max-width:520px){.answers{grid-template-columns:1fr}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions a{width:100%}.nav-cta{padding-inline:14px}}
+    .success-wrap{display:none;padding:18px;border-radius:18px;background:linear-gradient(135deg,#ecfff7,#fff7e7);border:1px solid #cfe8d8;text-align:center}
+    .success-wrap.show{display:block}
+    .success-wrap h4{margin:0 0 8px;font-size:1.7rem}.success-wrap p{margin:0 0 16px;color:#3a4a58}
+    .cta-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    @media(max-width:980px){.features{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-grid,.mom-box,.faq,.steps,.challenge-grid{grid-template-columns:1fr}.games-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:720px){.nav-links{display:none}.games-grid,.features{grid-template-columns:1fr}.section-head{display:block}.hero{padding-top:32px}.answers{grid-template-columns:1fr 1fr}} 
+    @media(max-width:520px){.answers{grid-template-columns:1fr}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions a{width:100%}.nav-cta{padding-inline:14px}.challenge-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -120,6 +132,7 @@
       <nav class="nav-links" aria-label="التنقل الرئيسي">
         <a href="#features">المزايا</a>
         <a href="#games">الألعاب</a>
+        <a href="#challenges">التحديات</a>
         <a href="#moms">للأمهات</a>
         <a href="#faq">الأسئلة</a>
       </nav>
@@ -131,23 +144,23 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <span class="eyebrow">🌟 ألعاب ممتعة + تعلم ذكي</span>
+          <span class="eyebrow">🌟 ألعاب ممتعة + تحديات متدرجة</span>
           <h1>ألغاز عربية<br><span>تنمي ذكاء الطفل</span></h1>
-          <p class="lead">موقع عربي يقدم ألعاب ألغاز تعليمية للأطفال لتنمية التفكير، الانتباه، والذاكرة في بيئة آمنة وممتعة، مع توجيه للأمهات للتعلّم مع الطفل في أوقات قصيرة ومفيدة.</p>
+          <p class="lead">موقع عربي يقدّم ألعاب ألغاز تعليمية للأطفال مع مراحل متدرجة من السهل إلى الصعب، وتحديات يومية وأسبوعية تشجع الطفل على الاستمرار، والتعلّم، والمرح في كل جلسة.</p>
           <div class="hero-actions">
             <a class="primary" href="#games">استكشف الألعاب</a>
-            <a class="secondary" href="#moms">دليل الأم</a>
+            <a class="secondary" href="#challenges">تحديات اليوم</a>
           </div>
           <div class="stats" aria-label="إحصاءات الموقع">
-            <div><strong>6</strong> ألعاب تفاعلية</div>
-            <div><strong>4+</strong> مهارات أساسية</div>
-            <div><strong>100%</strong> مناسب للعائلة</div>
+            <div><strong>8</strong> ألعاب تفاعلية</div>
+            <div><strong>3</strong> مراحل لكل لعبة</div>
+            <div><strong>مستمر</strong> تحديات يومية</div>
           </div>
         </div>
         <div class="hero-art" aria-label="ألغاز وألعاب تعليمية للطفل">
           <div class="blob">🧠</div>
-          <div class="float one">✨ ألعاب ممتعة</div>
-          <div class="float two">💡 فكّر معًا</div>
+          <div class="float one">✨ لعبة جديدة</div>
+          <div class="float two">💡 تحدي اليوم</div>
           <div class="float three">⭐</div>
         </div>
       </div>
@@ -165,17 +178,17 @@
           <article class="feature">
             <div class="icon" style="background:#fff0f6;">🧠</div>
             <h3>تنمية التفكير</h3>
-            <p>أسئلة وتحديات بسيطة تحفّز المنطق والفهم.</p>
+            <p>أسئلة متدرجة تصعّب تدريجيًا وتزيد التحدي.</p>
           </article>
           <article class="feature">
             <div class="icon" style="background:#ebfaf4;">👀</div>
             <h3>الانتباه</h3>
-            <p>تمارين قصيرة تعزز القدرة على ملاحظة التفاصيل.</p>
+            <p>تمارين قصيرة تعزز ملاحظة التفاصيل والتمييز.</p>
           </article>
           <article class="feature">
             <div class="icon" style="background:#f3eeff;">📝</div>
             <h3>الذاكرة</h3>
-            <p>تدربات ممتعة تساعد الطفل على تذكر الأشياء بسرعة.</p>
+            <p>تدربات ممتعة تساعد على تذكر الأمور بسرعة.</p>
           </article>
           <article class="feature">
             <div class="icon" style="background:#edf6ff;">💛</div>
@@ -191,7 +204,7 @@
         <div class="section-head">
           <div>
             <h2>اختَر لعبة اليوم</h2>
-            <p>ألغاز مناسبة لأوقات اللعب العائلية والأنشطة الذهنية البسيطة.</p>
+            <p>كل لعبة تضم ثلاث مراحل مختلفة: سهل، متوسط، صعب.</p>
           </div>
         </div>
         <div class="filter-row" aria-label="تصفية الألعاب">
@@ -205,26 +218,38 @@
       </div>
     </section>
 
+    <section class="section" id="challenges">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>تحديات اليوم والأسبوع</h2>
+            <p>أضف تحديات أصعب دوماً لمن ينجح في الحل.</p>
+          </div>
+        </div>
+        <div class="challenge-grid" id="challengeGrid"></div>
+      </div>
+    </section>
+
     <section class="section" id="moms">
       <div class="wrap">
         <div class="mom-box">
           <div>
             <span class="eyebrow" style="background:#fff;color:#d86e8e;">💛 دليل الأم</span>
             <h2>اللعب خيار ممتع للتعلّم</h2>
-            <p>الهدف ليس الوصول إلى الإجابة فقط، بل مساعدتك على بناء لحظات حب واهتمام مع طفلك. اسألي الطفل «كيف عرفت؟» وشجّعيه على التفسير بدلًا من إعطاء الحل مباشرة.</p>
+            <p>الهدف ليس الوصول إلى الإجابة فقط، بل بناء لحظات حب واهتمام مع طفلك. عندما يحل الطفل لغزًا، اسأليه: «كيف عرفت؟» وعلّمه تفسير السبب، فهذا يجعل التعلم أكثر عمقًا.</p>
           </div>
           <div class="tips">
             <div class="tip">
               <span class="tip-num">1</span>
-              <div>اختر وقتًا قصيرًا ومريحًا، فالقليل من اللعب غالبًا أكثر فائدة.</div>
+              <div>استعيني بمراحل قصيرة؛ فالنجاح المتكرر يحفّز الطفل على الاستمرار.</div>
             </div>
             <div class="tip">
               <span class="tip-num">2</span>
-              <div>احتفلي بمحاولات الطفل حتى لو لم تكن صحيحة، لأن التجربة جزء من التعلم.</div>
+              <div>احتفلي بالإجابة الصحيحة، حتى لو كانت بسيطة، لتزيد الثقة وتنمو العادة الإيجابية.</div>
             </div>
             <div class="tip">
               <span class="tip-num">3</span>
-              <div>حوّلي الأسئلة إلى حوار ممتع، لا إلى اختبار أو مقارنة.</div>
+              <div>ضعي تحديات يومية أو أسبوعية، فالمستوى الأعلى يجعل اللعب أكثر متعة وحافزًا.</div>
             </div>
           </div>
         </div>
@@ -243,17 +268,17 @@
           <article class="step">
             <div class="step-num">1</div>
             <h3>اختر اللعبة</h3>
-            <p>اختار الفئة المناسبة لعمر الطفل ومزاجه الحالي.</p>
+            <p>اختر الفئة المناسبة لـعمر الطفل ومزاجه الحالي.</p>
           </article>
           <article class="step">
             <div class="step-num">2</div>
-            <h3>ناقش الإجابة</h3>
-            <p>اسألي الطفل ليشرح السبب، هذا يساعده على فهم الحيلة.</p>
+            <h3>حل المرحلة</h3>
+            <p>كل لعبة تحتوي على ثلاث مراحل، وكل مرحلة أصعب من سابقتها.</p>
           </article>
           <article class="step">
             <div class="step-num">3</div>
-            <h3>احتفل بالنجاح</h3>
-            <p>التشجيع يرفع الثقة ويجعل اللعب تجربة ممتعة متكررة.</p>
+            <h3>احتفل بالإنجاز</h3>
+            <p>عند إكمال اللعبة، يظهر تهنئة وتوجيه مباشر إلى الألعاب الأخرى.</p>
           </article>
         </div>
       </div>
@@ -270,19 +295,19 @@
         <div class="faq">
           <article class="faq-item">
             <h3>هل الموقع مجاني؟</h3>
-            <p>نعم، الموقع مجاني ومتاح للعائلة مباشرة دون تسجيل.</p>
+            <p>نعم، الموقع مجاني ومتاح للعائلة مباشرة.</p>
           </article>
           <article class="faq-item">
             <h3>هل يمكن اللعب من الهاتف؟</h3>
             <p>نعم، الموقع مصمم ليناسب الهاتف واللوحي وسطح المكتب.</p>
           </article>
           <article class="faq-item">
-            <h3>هل هذه الألعاب مناسبة لجميع الأعمار؟</h3>
-            <p>تم تصميمها للأطفال الصغار، مع إمكانية تعديل الصعوبة بحسب عمر الطفل.</p>
+            <h3>هل الألعاب متدرجة؟</h3>
+            <p>نعم، كل لعبة تحتوي على ثلاث مراحل، وكل مرحلة أصعب من سابقتها.</p>
           </article>
           <article class="faq-item">
-            <h3>هل يمكن إضافة ألعاب أكثر لاحقًا؟</h3>
-            <p>نعم، الموقع قابل للتطوير وإضافة مستويات جديدة وأصوات ورسومات أكثر.</p>
+            <h3>هل ستضاف ألعاب جديدة؟</h3>
+            <p>نعم، ستتم إضافة ألعاب أصعب في التحديات اليومية والأسبوعية.</p>
           </article>
         </div>
       </div>
@@ -291,7 +316,7 @@
     <section class="cta-box">
       <div class="wrap">
         <h2>هيّا نبدأ يومًا جديدًا من المرح</h2>
-        <p>اختاري لعبة اليوم، واسألي الطفل عن الفكرة، واحتفلي بمحاولته، فذلك هو جوّ التعلم الحقيقي.</p>
+        <p>كل مرحلة تمثل تحديًا جديدًا، وكل نجاح يفتح بابًا جديدًا من السعادة والتعلّم.</p>
         <a class="primary" href="#games">ابدأ الآن</a>
       </div>
     </section>
@@ -312,31 +337,184 @@
         <span id="modalAge">٤–٧ سنوات</span>
       </div>
       <h3 id="modalTitle">عنوان اللعبة</h3>
+      <div class="stage-head">
+        <span id="stageLabel">المستوى 1</span>
+        <span id="questionCounter">1 / 3</span>
+      </div>
+      <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
       <p class="question" id="questionText">السؤال</p>
       <div class="answers" id="answers"></div>
       <div class="feedback" id="feedback" aria-live="polite"></div>
+      <div class="success-wrap" id="successWrap">
+        <h4>🎉 نجاح رائع!</h4>
+        <p id="successText">أكملت هذه المرحلة بنجاح.</p>
+        <div class="cta-row">
+          <button class="cta-small" id="nextStageBtn">المستوى التالي</button>
+          <button class="cta-small" id="viewOtherGamesBtn">الألعاب الأخرى</button>
+        </div>
+      </div>
       <button class="next-btn" id="nextQuestion">التالي</button>
       <div class="score" id="score"></div>
     </div>
   </div>
 
   <script>
+    const dailyChallenges = [
+      { title:'تحدي اليوم', description:'حل 3 أسئلة متدرجة في مهارة الملاحظة.', badge:'مستوى سهل' },
+      { title:'تحدي اليوم 2', description:'أسئلة أكثر تركيزًا وتحديًا في المنطق.', badge:'مستوى متوسط' },
+      { title:'تحدي الأسبوع', description:'مجموعة أصعب وجاهزة لمن نجح في اليوم.', badge:'مستوى صعب' }
+    ];
+
     const games = [
-      { id:'odd', title:'من المختلف؟', icon:'🦊', bg:'bg-pink', tag:'انتباه', category:'memory', age:'٤–٧ سنوات', desc:'لاحظ الصور واختر العنصر الذي لا ينتمي للمجموعة.', questions:[{q:'أي واحد مختلف عن البقية؟', a:['🐱','🐶','🚗','🐰'], ok:2, hint:'ثلاثة حيوانات وواحد يركب.'},{q:'أي شكل لا يشبه البقية؟', a:['🔵','🟢','🍎','🟡'], ok:2, hint:'ثلاثة ألوان وواحد فاكهة.'}] },
-      { id:'logic', title:'فكّر بذكاء', icon:'💡', bg:'bg-yellow', tag:'منطق', category:'logic', age:'٥–٨ سنوات', desc:'ألغاز بسيطة تشجع الطفل على التفكير خطوة بخطوة.', questions:[{q:'لدى سارة ٣ تفاحات وأعطتها أمها تفاحة أخرى. كم تفاحة معها الآن؟', a:['٢','٣','٤','٥'], ok:2, hint:'أضيفي واحدة إلى الثلاث.'},{q:'ما الشيء الذي نراه في الليل ويختفي غالبًا في النهار؟', a:['القمر','الكرسي','الكتاب','الحذاء'], ok:0, hint:'تراه في السماء.'}] },
-      { id:'words', title:'كلمات وحروف', icon:'🔤', bg:'bg-mint', tag:'لغة', category:'words', age:'٥–٩ سنوات', desc:'اكتشف الكلمة المناسبة وتعرّف على الحروف بطريقة مرحة.', questions:[{q:'أي كلمة تبدأ بحرف «م»؟', a:['قمر','موز','بيت','ورد'], ok:1, hint:'نقول مـ…وز.'},{q:'أكمل الجملة: العصفور يطير في…', a:['الماء','السماء','البيت','التراب'], ok:1, hint:'انظر إلى الأعلى.'}] },
-      { id:'pattern', title:'أكمل النمط', icon:'🎨', bg:'bg-purple', tag:'تركيز', category:'logic', age:'٤–٨ سنوات', desc:'راقب الترتيب واختر ما يأتي بعده.', questions:[{q:'ما التالي؟ 🔴 🔵 🔴 🔵 …', a:['🔴','🔵','🟡','🟢'], ok:0, hint:'يطابق اللون بالتناوب.'},{q:'ما التالي؟ ⭐ 🌙 ⭐ 🌙 …', a:['☀️','⭐','🌙','☁️'], ok:1, hint:'نجمة ثم قمر ثم تكرار.'}] },
-      { id:'memory', title:'تذكّر بسرعة', icon:'🧸', bg:'bg-blue', tag:'ذاكرة', category:'memory', age:'٤–٧ سنوات', desc:'أسئلة لطيفة للتدرب على تذكر الأشياء وملاحظتها.', questions:[{q:'أي حيوان يقول «مواء»؟', a:['🐮','🐱','🐑','🐴'], ok:1, hint:'حيوان أليف يحب اللبن.'},{q:'أي فاكهة لونها أصفر غالبًا؟', a:['🍌','🍓','🍇','🍉'], ok:0, hint:'طويلة ومنحنية.'}] },
-      { id:'riddle', title:'لغز صغير', icon:'🕵️', bg:'bg-peach', tag:'ألغاز', category:'words', age:'٦–٩ سنوات', desc:'اقرأ اللغز مع طفلك وفكّرا في الإجابة معًا.', questions:[{q:'له أسنان ولا يعض، ما هو؟', a:['المشط','القط','الكرسي','الكتاب'], ok:0, hint:'نستخدمه على الشعر.'},{q:'يمشي بلا قدمين ويبكي بلا عينين، ما هو؟', a:['السحاب','الحذاء','القلم','الطاولة'], ok:0, hint:'ينزل منه المطر.'}] }
+      { id:'odd', title:'من المختلف؟', icon:'🦊', bg:'bg-pink', tag:'انتباه', category:'memory', age:'٤–٧ سنوات', desc:'لاحظ الصور واختر العنصر الذي لا ينتمي إلى المجموعة.', stages:[
+        { title:'المستوى 1', difficulty:'سهل', questions:[
+          { q:'أي واحد مختلف عن البقية؟', a:['🐱','🐶','🚗','🐰'], ok:2, hint:'ثلاثة حيوانات وواحد وسيلة نقل.' },
+          { q:'أي شكل لا يطابق البقية؟', a:['🔵','🟢','🍎','🟡'], ok:2, hint:'ثلاثة ألوان وواحد فاكهة.' },
+          { q:'أي حرف لا ينتمي إلى المجموعة؟', a:['ب','م','س','🦊'], ok:3, hint:'الآخر ليس حرفًا.' }
+        ]},
+        { title:'المستوى 2', difficulty:'متوسط', questions:[
+          { q:'أي شيء مختلف في هذا السطر؟', a:['🍉','🍉','🍋','🍉'], ok:2, hint:'اللون مختلف قليلاً.' },
+          { q:'أي صورة ليست من نفس الفئة؟', a:['🦄','🦁','🐼','🚲'], ok:3, hint:'هذا ليس حيوانًا.' },
+          { q:'ما الذي لا يطابق بقية الأشكال؟', a:['🔺','🔵','🔶','🔷'], ok:1, hint:'هذا واحد دائري وليس مثلث/معين.' }
+        ]},
+        { title:'المستوى 3', difficulty:'صعب', questions:[
+          { q:'أي عنصر ليس في نفس النمط؟', a:['☀️','🌤️','🌧️','🌞'], ok:2, hint:'هذا ليس مشمسًا.' },
+          { q:'اختر العنصر المختلف عن البقية.', a:['🐠','🐟','🐬','🍋'], ok:3, hint:'هذا ليس حيوانًا مائيًا.' },
+          { q:'ما الذي لا يندمج مع البقية؟', a:['🧩','🎲','📚','🧸'], ok:2, hint:'هذا ليس لعبة ذهنية أو أداة لعب.' }
+        ]}
+      ] },
+      { id:'logic', title:'فكّر بذكاء', icon:'💡', bg:'bg-yellow', tag:'منطق', category:'logic', age:'٥–٨ سنوات', desc:'ألغاز بسيطة تشجع الطفل على التفكير خطوة بخطوة.', stages:[
+        { title:'المستوى 1', difficulty:'سهل', questions:[
+          { q:'لدى سارة ٣ تفاحات وأعطتها أمها تفاحة أخرى. كم تفاحة معها الآن؟', a:['٢','٣','٤','٥'], ok:2, hint:'أضيفي واحدة إلى الثلاث.' },
+          { q:'إذا كان عندك ٢ كرات وأعطيت أخاك 1، فكم تبقى عندك؟', a:['1','2','3','4'], ok:0, hint:'انقاص واحد.' },
+          { q:'ما الشيء الذي نراه في الليل ويختفي غالبًا في النهار؟', a:['القمر','الكرسي','الكتاب','الحذاء'], ok:0, hint:'يظهر في السماء.' }
+        ]},
+        { title:'المستوى 2', difficulty:'متوسط', questions:[
+          { q:'إذا كان في الحديقة 4 طيور ثم هبطت طائرتان إضافيتان، فكم عدد الطيور؟', a:['4','5','6','7'], ok:2, hint:'4 + 2 = 6.' },
+          { q:'كلب يملك 3 كعكات، ثم أكل واحدة. كم تبقى؟', a:['1','2','3','0'], ok:1, hint:'3 - 1 = 2.' },
+          { q:'إذا كان اليوم السبت، فبعد يومين يكون؟', a:['الأحد','الإثنين','الثلاثاء','الأربعاء'], ok:1, hint:'سابت + يومان = الإثنين.' }
+        ]},
+        { title:'المستوى 3', difficulty:'صعب', questions:[
+          { q:'عندك 5 أقلام، أعطيت أخاك 2، ثم اشتريت 3. كم لديك الآن؟', a:['5','6','7','8'], ok:2, hint:'5 - 2 + 3 = 6.' },
+          { q:'إذا كان عمر علي 6 سنوات، وعمر أخته 2 سنوات أكثر منه، فما عمر أخته؟', a:['6','7','8','9'], ok:2, hint:'6 + 2 = 8.' },
+          { q:'أمينة لديها 10 فطائر ووضعت 4 في الطبق و3 في الحقيبة. كم بقي معها؟', a:['3','4','5','6'], ok:0, hint:'10 - 4 - 3 = 3.' }
+        ]}
+      ] },
+      { id:'words', title:'كلمات وحروف', icon:'🔤', bg:'bg-mint', tag:'لغة', category:'words', age:'٥–٩ سنوات', desc:'اكتشف الكلمة المناسبة وتعرّف على الحروف بطريقة مرحة.', stages:[
+        { title:'المستوى 1', difficulty:'سهل', questions:[
+          { q:'أي كلمة تبدأ بحرف «م»؟', a:['قمر','بيت','ورد','شجرة'], ok:0, hint:'هي كلمة تعني «رمز هادئ»؟' },
+          { q:'أكمل الجملة: العصفور يطير في…', a:['الماء','السماء','البيت','التراب'], ok:1, hint:'ينظر إلى الأعلى.' },
+          { q:'اختر الكلمة التي تنتهي بحرف «ر»', a:['موز','كتاب','قمر','شمس'], ok:2, hint:'عندها يبرد الصوت.' }
+        ]},
+        { title:'المستوى 2', difficulty:'متوسط', questions:[
+          { q:'أي كلمة تعني شيء يكتب عليه؟', a:['قلم','شراب','مطر','سماء'], ok:0, hint:'يستخدم في المدرسة.' },
+          { q:'اختر كلمة فيها حرف «س» في الوسط.', a:['موز','سحاب','قمر','طائر'], ok:1, hint:'تراه في السماء مع المطر.' },
+          { q:'أي كلمة تطابق هذا الصوت: /ش/؟', a:['شمس','بيت','طائرة','قلم'], ok:0, hint:'تشرق في الصباح.' }
+        ]},
+        { title:'المستوى 3', difficulty:'صعب', questions:[
+          { q:'أي كلمة لها نفس الحرف الأول والأخير؟', a:['مدرسة','شجرة','قمر','كتاب'], ok:1, hint:'تبدأ بحرف ش وتنهى بحرف ة؟' },
+          { q:'اختر الكلمة التي لها صوت «ز»', a:['زرافة','قلم','بيت','شمس'], ok:0, hint:'حيوان طويل العنق.' },
+          { q:'كم حرفًا في كلمة «طفل»؟', a:['3','4','5','6'], ok:1, hint:'ت- ط- ف- ل.' }
+        ]}
+      ] },
+      { id:'pattern', title:'أكمل النمط', icon:'🎨', bg:'bg-purple', tag:'تركيز', category:'logic', age:'٤–٨ سنوات', desc:'راقب الترتيب واختر ما يأتي بعده.', stages:[
+        { title:'المستوى 1', difficulty:'سهل', questions:[
+          { q:'ما التالي؟ 🔴 🔵 🔴 🔵 …', a:['🔴','🔵','🟡','🟢'], ok:0, hint:'التكرار يتناوب.' },
+          { q:'ما التالي؟ ⭐ 🌙 ⭐ 🌙 …', a:['☀️','⭐','🌙','☁️'], ok:1, hint:'تكرار النجمة ثم القمر.' },
+          { q:'ما التالي؟ 1 2 1 2 …', a:['1','2','3','4'], ok:0, hint:'انظر إلى النمط التكراري.' }
+        ]},
+        { title:'المستوى 2', difficulty:'متوسط', questions:[
+          { q:'ما التالي؟ 🔺 🔺 🔵 🔺 🔺 🔵 …', a:['🔺','🔵','🟡','🟢'], ok:1, hint:'التكرار هو 2 مثلثات ثم دائرة.' },
+          { q:'كم عدد النقاط؟ 1 2 3 4 …', a:['5','6','7','8'], ok:0, hint:'تزيد واحدًا في كل مرة.' },
+          { q:'ما التالي؟ 🚗 🚗 🏎️ 🚗 🚗 🏎️ …', a:['🚗','🏎️','🚕','🛴'], ok:1, hint:'تكرار صورتين ثم صورة واحدة.' }
+        ]},
+        { title:'المستوى 3', difficulty:'صعب', questions:[
+          { q:'ما التالي؟ 🔴 🔵 🟡 🔴 🔵 🟡 …', a:['🔴','🔵','🟡','🟢'], ok:2, hint:'اللون يتكرر ثلاثيًا.' },
+          { q:'ما التالي؟ 2 4 6 8 …', a:['9','10','12','14'], ok:1, hint:'تزيد 2 في كل مرة.' },
+          { q:'ما التالي؟ 🍎 🍇 🍎 🍇 …', a:['🍇','🍎','🍋','🍒'], ok:0, hint:'النمط يتبادل بين الفاكهتين.' }
+        ]}
+      ] },
+      { id:'memory', title:'تذكّر بسرعة', icon:'🧸', bg:'bg-blue', tag:'ذاكرة', category:'memory', age:'٤–٧ سنوات', desc:'أسئلة لطيفة للتدرب على تذكر الأشياء وملاحظتها.', stages:[
+        { title:'المستوى 1', difficulty:'سهل', questions:[
+          { q:'أي حيوان يقول «مواء»؟', a:['🐮','🐱','🐑','🐴'], ok:1, hint:'حيوان أليف يتبع المالك.' },
+          { q:'أي فاكهة لونها أصفر غالبًا؟', a:['🍌','🍓','🍇','🍉'], ok:0, hint:'طويلة ومنحنية.' },
+          { q:'ماذا نستخدم لتناول الطعام؟', a:['الكتاب','الطاولة','الملاعق','النافذة'], ok:2, hint:'أدوات صغيرة نستخدمها في الوجبات.' }
+        ]},
+        { title:'المستوى 2', difficulty:'متوسط', questions:[
+          { q:'أي لون يطابق السماء؟', a:['الأخضر','الأزرق','الأحمر','الأسود'], ok:1, hint:'يوجد في يوم صافي.' },
+          { q:'في اليوم الحار، ما الذي نرتديه؟', a:['القبعة','الساعة','الكتاب','الروحة'], ok:0, hint:'نضعها على الرأس.' },
+          { q:'أي شيء يطفو في الماء؟', a:['الحجر','الورق','الحديد','الطوب'], ok:1, hint:'من السهل أن يجفف.' }
+        ]},
+        { title:'المستوى 3', difficulty:'صعب', questions:[
+          { q:'ما الذي يلمع في الليل ويضيء الطريق؟', a:['النجمة','الزجاج','القلم','الكرة'], ok:0, hint:'في السماء لا نراه دائماً.' },
+          { q:'أي شيء يساعدنا على المشي في المطر؟', a:['المظلة','المعجون','الفرشاة','القلم'], ok:0, hint:'تضعها فوق الرأس.' },
+          { q:'أي طائر يرفرف في الهواء ويغني؟', a:['السمكة','العصفور','السلحفاة','الأسد'], ok:1, hint:'يصلح في الشجر.' }
+        ]}
+      ] },
+      { id:'riddle', title:'لغز صغير', icon:'🕵️', bg:'bg-peach', tag:'ألغاز', category:'words', age:'٦–٩ سنوات', desc:'اقرأ اللغز مع طفلك وفكّرا في الإجابة معًا.', stages:[
+        { title:'المستوى 1', difficulty:'سهل', questions:[
+          { q:'له أسنان ولا يعض، ما هو؟', a:['المشط','القط','الكرسي','الكتاب'], ok:0, hint:'نستخدمه على الشعر.' },
+          { q:'يمشي بلا قدمين ويبكي بلا عينين، ما هو؟', a:['السحاب','الحذاء','القلم','الطاولة'], ok:0, hint:'يهبط منه المطر.' },
+          { q:'ما الذي يفتح ولا يغلق؟', a:['البيت','الكتاب','المرآة','الرسالة'], ok:1, hint:'نقرأ منه.' }
+        ]},
+        { title:'المستوى 2', difficulty:'متوسط', questions:[
+          { q:'أطول شيء في البيت ولا يتحرك؟', a:['السقف','الطاولة','النافذة','السرير'], ok:0, hint:'يعلو فوق رأسك.' },
+          { q:'رجل يلعب في البحر، لكنه لا يسبح. ما هو؟', a:['السمك','القارب','الحجر','الشجرة'], ok:1, hint:'يركب عليه الناس.' },
+          { q:'أين يذهب الصوت إذا كنت لا تسمع؟', a:['في الحائط','في الهواء','في الأرض','في الدفتر'], ok:1, hint:'تنتقل الموجات عبره.' }
+        ]},
+        { title:'المستوى 3', difficulty:'صعب', questions:[
+          { q:'يدخل في الماء وهو جاف، ويخرج وهو مبلل. ما هو؟', a:['الاستعارة','الكرة','المناديل','الورق'], ok:3, hint:'تجفّ عندك.' },
+          { q:'ما الذي يمكن أن يقطع الخشب ولا يقطع الورق؟', a:['المنشار','المقص','السيف','المكواة'], ok:0, hint:'أداة خاصة بالنجارة.' },
+          { q:'ماذا يوجد في منتصف الليل ولا يوجد في منتصف النهار؟', a:['القمر','الكتاب','الطاولة','المقعد'], ok:0, hint:'يظهر في السماء ليلاً.' }
+        ]}
+      ] },
+      { id:'shapes', title:'الأشكال', icon:'🧩', bg:'bg-sky', tag:'تصنيف', category:'logic', age:'٥–٨ سنوات', desc:'عرف الأشكال وتعرف على الخصائص البصرية.', stages:[
+        { title:'المستوى 1', difficulty:'سهل', questions:[
+          { q:'أي شكل له ثلاث زوايا؟', a:['مثلث','مربع','دائرة','مستطيل'], ok:0, hint:'يُسمى بثلاثة أضلاع.' },
+          { q:'أي شكل تمامًا مثل الطاولة؟', a:['مربع','دائرة','مثلث','نجمة'], ok:0, hint:'الأضلاع متساوية.' },
+          { q:'أي شكل ليس له زوايا؟', a:['دائرة','مثلث','مربع','مستطيل'], ok:0, hint:'ليس له أضلاع.' }
+        ]},
+        { title:'المستوى 2', difficulty:'متوسط', questions:[
+          { q:'ما الشكل الذي له أربعة أضلاع متساوية؟', a:['مربع','مثلث','دائرة','نجمة'], ok:0, hint:'أضلاعه الأربعة متطابقة.' },
+          { q:'أي شكل يمكن أن يكون طويلًا وعريضًا؟', a:['مستطيل','مثلث','دائرة','أُفُق'], ok:0, hint:'أصل مثل باب.' },
+          { q:'كم عدد أضلاع المثلث؟', a:['2','3','4','5'], ok:1, hint:'يبدأ بـثلاثة.' }
+        ]},
+        { title:'المستوى 3', difficulty:'صعب', questions:[
+          { q:'كم عدد الزوايا في المربع؟', a:['2','3','4','5'], ok:2, hint:'كل ضلع يلتقي بآخر.' },
+          { q:'إذا جمعنا مستطيلًا ومثلثًا، فهل يصبح شكلًا آخر؟', a:['نعم','لا','أحيانًا','غير واضح'], ok:0, hint:'بشكل عام، يختلف عن الشكل الأصلي.' },
+          { q:'ما الشكل الذي له 6 جوانب؟', a:['مسدس','مثلث','مربع','مستطيل'], ok:0, hint:'يبدأ بـمسدس.' }
+        ]}
+      ] },
+      { id:'colors', title:'الألوان', icon:'🌈', bg:'bg-orange', tag:'تجربة', category:'memory', age:'٤–٦ سنوات', desc:'اختر اللون المناسب وأكمل التدرج.', stages:[
+        { title:'المستوى 1', difficulty:'سهل', questions:[
+          { q:'أي لون يشبه التفاح؟', a:['أحمر','أزرق','أسود','أخضر'], ok:0, hint:'موجود في الفاكهة.' },
+          { q:'أي لون يكون شبيهًا للماء؟', a:['أزرق','برتقالي','أصفر','بنفسجي'], ok:0, hint:'نراه في السماء.' },
+          { q:'أي لون يذكرنا بالعشب؟', a:['أخضر','وردي','أسود','أصفر'], ok:0, hint:'في الربيع يكون كذلك.' }
+        ]},
+        { title:'المستوى 2', difficulty:'متوسط', questions:[
+          { q:'إذا خلطنا الأصفر مع الأزرق، فما اللون الناتج؟', a:['أخضر','أحمر','برتقالي','بنفسجي'], ok:0, hint:'لون أوراق الشجر.' },
+          { q:'ما اللون الذي يشبه النار؟', a:['أحمر','أخضر','أزرق','أسود'], ok:0, hint:'يظهر في اللهب.' },
+          { q:'ما اللون الذي يبدو مثل شرائط البحر؟', a:['أزرق','وردي','بنفسجي','بني'], ok:0, hint:'لون الماء.' }
+        ]},
+        { title:'المستوى 3', difficulty:'صعب', questions:[
+          { q:'إذا خلطنا الأحمر والأصفر، فماذا نحصل؟', a:['برتقالي','أخضر','أزرق','أسود'], ok:0, hint:'لون البرتقال.' },
+          { q:'أي لون يرمز إلى السعادة والضحك؟', a:['أصفر','أسود','بني','رمادي'], ok:0, hint:'لون أشعة الشمس.' },
+          { q:'ما اللون الذي يرمز إلى الورود؟', a:['وردي','أرجواني','أخضر','مائي'], ok:0, hint:'لون زهرة شائعة.' }
+        ]}
+      ] }
     ];
 
     const grid = document.getElementById('gamesGrid');
+    const challengeGrid = document.getElementById('challengeGrid');
     const modal = document.getElementById('gameModal');
     const empty = document.getElementById('gamesEmpty');
     let activeGame = null;
-    let currentIndex = 0;
+    let stageIndex = 0;
+    let questionIndex = 0;
     let score = 0;
     let answered = false;
+    let stageScore = 0;
+    let gameCompleted = false;
 
     function renderGames(filter='all') {
       const list = games.filter(g => filter === 'all' || g.category === filter);
@@ -355,29 +533,132 @@
       empty.classList.toggle('show', list.length === 0);
     }
 
-    function openGame(id){
-      activeGame = games.find(g => g.id === id);
-      currentIndex = 0;
-      score = 0;
-      modal.classList.add('open');
-      showQuestion();
+    function renderChallenges() {
+      challengeGrid.innerHTML = dailyChallenges.map(ch => `
+        <article class="challenge-card">
+          <span class="badge">${ch.badge}</span>
+          <h3>${ch.title}</h3>
+          <p>${ch.description}</p>
+          <button class="primary" onclick="openDailyChallenge('${ch.title}')">ابدأ التحدي</button>
+        </article>
+      `).join('');
     }
 
-    function showQuestion(){
+    function openDailyChallenge(label) {
+      const challengeLabel = label || 'تحدي اليوم';
+      const challengeText = challengeLabel === 'تحدي الأسبوع' ? 'تحدي الأسبوع: أسئلة أكثر تعقيدًا ومناسبة لمن نجح في التحدي اليومي.' : 'تحدي اليوم: أسئلة ذهنية تراكمية ومشوقة.';
+      alert(challengeText + '\nسيتم إضافة مستويات أصعب لاحقًا مع تقدم اللاعب.');
+    }
+
+    function openGame(id){
+      activeGame = games.find(g => g.id === id);
+      stageIndex = 0;
+      questionIndex = 0;
+      score = 0;
+      stageScore = 0;
+      gameCompleted = false;
+      modal.classList.add('open');
+      showStage();
+    }
+
+    function getCurrentStage(){
+      return activeGame.stages[stageIndex];
+    }
+
+    function getCurrentQuestion(){
+      return getCurrentStage().questions[questionIndex];
+    }
+
+    function getStageProgressPct(){
+      const stage = getCurrentStage();
+      const total = stage.questions.length;
+      return ((questionIndex + 1) / total) * 100;
+    }
+
+    function showStage(){
+      const stage = getCurrentStage();
+      const q = getCurrentQuestion();
       answered = false;
-      const item = activeGame.questions[currentIndex];
       document.getElementById('modalTag').textContent = activeGame.tag;
       document.getElementById('modalAge').textContent = activeGame.age;
-      document.getElementById('modalTitle').textContent = activeGame.title;
-      document.getElementById('questionText').textContent = item.q;
-      document.getElementById('answers').innerHTML = item.a.map((answer,index) => `<button class="answer" data-index="${index}">${answer}</button>`).join('');
-      const fb = document.getElementById('feedback');
-      fb.textContent = '';
-      fb.className = 'feedback';
-      const btn = document.getElementById('nextQuestion');
-      btn.classList.remove('show');
-      btn.textContent = currentIndex === activeGame.questions.length - 1 ? 'عرض النتيجة' : 'السؤال التالي';
-      document.getElementById('score').textContent = `السؤال ${currentIndex + 1} من ${activeGame.questions.length} · الإجابات الصحيحة: ${score}`;
+      document.getElementById('modalTitle').textContent = `${activeGame.title}`;
+      document.getElementById('stageLabel').textContent = `${stage.title} · ${stage.difficulty}`;
+      document.getElementById('questionCounter').textContent = `${questionIndex + 1} / ${stage.questions.length}`;
+      document.getElementById('questionText').textContent = q.q;
+      document.getElementById('answers').innerHTML = q.a.map((answer, index) => `<button class="answer" data-index="${index}">${answer}</button>`).join('');
+      document.getElementById('progressBar').style.width = `${getStageProgressPct()}%`;
+      const feedback = document.getElementById('feedback');
+      feedback.textContent = 'اختر الإجابة الصحيحة.';
+      feedback.className = 'feedback info';
+      const nextBtn = document.getElementById('nextQuestion');
+      nextBtn.classList.remove('show');
+      nextBtn.textContent = 'التالي';
+      document.getElementById('successWrap').classList.remove('show');
+      document.getElementById('score').textContent = `المرحلة الحالية: ${stageScore} نقطة · الإجابات الصحيحة: ${score}`;
+    }
+
+    function activateFinalSuccess(text){
+      const successWrap = document.getElementById('successWrap');
+      const successText = document.getElementById('successText');
+      successText.textContent = text;
+      successWrap.classList.add('show');
+      document.getElementById('answers').innerHTML = '';
+      document.getElementById('questionText').textContent = 'أحسنت! لقد أنهيت هذه المرحلة.';
+      document.getElementById('feedback').textContent = '';
+      document.getElementById('nextQuestion').classList.remove('show');
+      document.getElementById('score').textContent = `الإنجاز: ${score} إجابة صحيحة في هذه اللعبة`;
+    }
+
+    function handleStageEnd(){
+      const currentStage = getCurrentStage();
+      const totalQuestions = currentStage.questions.length;
+      const stagePercent = Math.round((stageScore / totalQuestions) * 100);
+      const isStagePassed = stageScore >= Math.ceil(totalQuestions * 0.6);
+
+      if (stageIndex < activeGame.stages.length - 1) {
+        if (isStagePassed) {
+          const nextBtn = document.getElementById('nextStageBtn');
+          nextBtn.textContent = 'المستوى التالي';
+          nextBtn.onclick = () => { stageIndex += 1; questionIndex = 0; stageScore = 0; showStage(); };
+          activateFinalSuccess(`أكملت ${currentStage.title} بنجاح بنسبة ${stagePercent}%، والآن جهّز نفسك للمستوى التالي.`);
+        } else {
+          activateFinalSuccess(`أكملت ${currentStage.title}، لكن تحتاج إلى مزيد من التدريب. جرّب مرة أخرى وستصل إلى مستوى أعلى.`);
+          document.getElementById('nextStageBtn').textContent = 'إعادة المحاولة';
+          document.getElementById('nextStageBtn').onclick = () => { questionIndex = 0; stageScore = 0; showStage(); };
+        }
+      } else {
+        const finalText = `🎉 ممتاز! أتممت جميع مراحل لعبة ${activeGame.title}. الآن أنت أذكى وأقوى في التفكير. سنعود غدًا أو الأسبوع القادم بألعاب أصعب وأعلى مستوى.`;
+        const next = document.getElementById('nextStageBtn');
+        next.textContent = 'العودة إلى الألعاب';
+        next.onclick = () => { modal.classList.remove('open'); };
+        activateFinalSuccess(finalText);
+      }
+    }
+
+    function afterQuestionAnswered(selectedIndex){
+      const stage = getCurrentStage();
+      const q = getCurrentQuestion();
+      const buttons = document.querySelectorAll('.answer');
+      buttons.forEach(btn => {
+        btn.disabled = true;
+        if (Number(btn.dataset.index) === q.ok) btn.classList.add('correct');
+      });
+      const feedback = document.getElementById('feedback');
+      if (selectedIndex === q.ok) {
+        score += 1;
+        stageScore += 1;
+        feedback.textContent = 'أحسنت! إجابة صحيحة 🌟';
+        feedback.classList.add('good');
+      } else {
+        const selectedButton = document.querySelector(`.answer[data-index="${selectedIndex}"]`);
+        if (selectedButton) selectedButton.classList.add('wrong');
+        feedback.textContent = `محاولة جميلة! تلميح: ${q.hint}`;
+        feedback.classList.add('bad');
+      }
+      document.getElementById('score').textContent = `المرحلة الحالية: ${stageScore} نقطة · الإجابات الصحيحة: ${score}`;
+      const nextBtn = document.getElementById('nextQuestion');
+      nextBtn.classList.add('show');
+      nextBtn.textContent = questionIndex === stage.questions.length - 1 ? 'إنهاء المرحلة' : 'التالي';
     }
 
     document.addEventListener('click', (event) => {
@@ -387,45 +668,25 @@
       const answerBtn = event.target.closest('.answer');
       if (answerBtn && !answered) {
         answered = true;
-        const item = activeGame.questions[currentIndex];
-        const selected = Number(answerBtn.dataset.index);
-        const buttons = document.querySelectorAll('.answer');
-        buttons.forEach(btn => {
-          btn.disabled = true;
-          if (Number(btn.dataset.index) === item.ok) btn.classList.add('correct');
-        });
-        const fb = document.getElementById('feedback');
-        if (selected === item.ok) {
-          score += 1;
-          fb.textContent = 'أحسنت! إجابة رائعة 🌟';
-          fb.classList.add('good');
-        } else {
-          answerBtn.classList.add('wrong');
-          fb.textContent = `محاولة جميلة! تلميح: ${item.hint}`;
-          fb.classList.add('bad');
-        }
-        document.getElementById('score').textContent = `السؤال ${currentIndex + 1} من ${activeGame.questions.length} · الإجابات الصحيحة: ${score}`;
-        document.getElementById('nextQuestion').classList.add('show');
+        const selectedIndex = Number(answerBtn.dataset.index);
+        afterQuestionAnswered(selectedIndex);
       }
 
       if (event.target.closest('#nextQuestion')) {
-        if (currentIndex < activeGame.questions.length - 1) {
-          currentIndex += 1;
-          showQuestion();
+        if (!answered) return;
+        if (questionIndex < getCurrentStage().questions.length - 1) {
+          questionIndex += 1;
+          showStage();
         } else {
-          document.getElementById('questionText').textContent = `أحسنت! حصلت على ${score} من ${activeGame.questions.length}. ${score === activeGame.questions.length ? 'إجابات مثالية 👏' : 'حاول مرة أخرى واستمتع بالمزيد 💛'}`;
-          document.getElementById('answers').innerHTML = '';
-          const fb = document.getElementById('feedback');
-          fb.textContent = 'المرح والتعلّم يسيران معًا.';
-          fb.className = 'feedback good';
-          const btn = document.getElementById('nextQuestion');
-          btn.textContent = 'العب مرة أخرى';
-          btn.classList.add('show');
-          btn.onclick = () => openGame(activeGame.id);
+          handleStageEnd();
         }
       }
 
       if (event.target.closest('#closeModal')) {
+        modal.classList.remove('open');
+      }
+
+      if (event.target.closest('#viewOtherGamesBtn')) {
         modal.classList.remove('open');
       }
     });
@@ -448,6 +709,7 @@
 
     document.getElementById('year').textContent = new Date().getFullYear();
     renderGames();
+    renderChallenges();
   </script>
 </body>
 </html>
